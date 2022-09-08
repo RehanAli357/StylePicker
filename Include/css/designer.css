@@ -1,0 +1,1725 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blanchedalmond;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(orangered,gold);
+}
+.back{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 255, 42);
+    margin-top:0px;
+    padding-top: 29px;/*to remove y axix scrollbar*/
+    display: block;
+    overflow: hidden;
+}
+.logo p{
+    writing-mode: vertical-rl;
+    font-size: 30px;
+    margin-top:-25px;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index:1;
+    cursor: pointer;
+}
+.logo p:hover{
+    box-shadow:inset 0px 189px 1px tomato;
+    transition: 0.5s;
+}
+.home p a{
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    font-weight: 30px;
+    margin-top: 7.1px;
+    padding-bottom: 29px;
+    margin-left: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index:1;
+}
+.home p a:hover{
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+#contact{
+    margin-bottom: 90px;
+}
+.main{
+    height: 429px;
+    width: 1300px;
+    background-image:url(../images/pattern.png);
+    border-top: 10px solid wheat;
+    border-right: 10px solid wheat;
+    border-bottom: 10px solid wheat;
+    border-radius: 0px 250px 250px 0px;
+    margin-left: 0px;
+    margin-top: -510px;
+    display: grid;
+    justify-content: center;
+    position: inherit;
+    animation: anim 3s 1 forwards;
+}
+@keyframes anim{
+    0% {transform: translateX(-1350px);}
+    100%{transform:translateX(0);}
+}
+.main img{
+    margin-top: -70px;
+    margin-left:100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid greenyellow;
+    box-shadow: 0px 10px 10px black,0px -5px 10px black;
+    position: relative;
+    z-index:4;
+}
+.main p{
+    margin-top: 70px;
+    margin-right: 0px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black; 
+}
+.main .para{
+    margin-top:100px;
+}
+/*------------------------------------front ends------------------------------------*/
+.tech{
+    height:640px;
+    width: 100%;
+    background-color: rgb(255, 5, 121);
+    margin-left:1366px;
+    margin-top: -579px;
+    overflow: hidden;
+}
+.tech:hover .container{
+    animation: drop 3s  1 forwards;
+    visibility: visible;
+}
+@keyframes loop{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+#one{
+    height: 60px;
+    width: 60px;
+    animation: loop 1s  infinite;
+    float: left;
+}
+#two{
+    height: 60px;
+    width: 60px;
+    animation: loop 1s  infinite;
+    float: right;
+    margin-right:20px;
+}
+#three{
+    height:60px;
+    width:60px;
+    animation: loop 1s  infinite;
+    float: right;
+    margin-top: 41.5%;
+    margin-right:-40px;
+}
+#four{
+    height: 60px;
+    width: 60px;
+    animation: loop 1s  infinite;
+    float: left;
+    margin-top:41.5%;
+    margin-left: -30px;
+}
+.container{
+    margin-top: 10px;
+    height: 580px;
+    width: 1000px;
+    border: 20px solid wheat;
+    border-radius: 30px;
+    background-color: rgb(117, 117, 117);
+    position: absolute;
+    top:0%;
+    left: 113%;
+    visibility: hidden;
+}
+@keyframes drop{
+    0%{transform: translateY(-1000px);}
+    100%{transform: translateY(0px);}
+}
+
+.container p{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px black;
+    color: rgb(241, 0, 121);
+    font-family: monospace;
+}
+.container ul{
+    margin-left: 20px;
+    display: inline-block;
+}
+.container ul li{
+    list-style: none;
+    line-height: 200%;
+    color: gold;
+    border: 1px solid wheat;
+}
+.container ul img{
+    height: 50px;
+    width: 50px;
+    margin-top: -870px;
+    margin-left: 550px;
+}
+#first{
+    padding-right: 520px;
+    padding-left:5px;
+    transition:1s;
+}
+#first:hover{
+    box-shadow:inset 360px 0px 1px tomato;
+    transition: 1s;
+}
+#second{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#second:hover{
+    transition: 1s;
+    box-shadow:inset 259px 0px 1px rgb(255, 38, 0);
+}
+#third{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#third:hover{
+    transition: 1s;
+    box-shadow:inset 52px 0px 1px rgb(217, 255, 0);
+}
+#fourth{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#fourth:hover{
+    transition: 1s;
+    box-shadow:inset 135px 0px 1px rgb(72, 255, 0);
+}
+#fifth{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#fifth:hover{
+    transition: 1s;
+    box-shadow:inset 119px 0px 1px rgb(0, 255, 191);
+}
+#sixth{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#sixth:hover{
+    transition: 1s;
+    box-shadow:inset 300px 0px 1px rgb(17, 0, 255);
+}
+#seventh{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#seventh:hover{
+    transition: 1s;
+    box-shadow:inset 230px 0px 1px rgb(119, 0, 255);
+}
+#eight{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#eight:hover{
+    transition: 1s;
+    box-shadow:inset 230px 0px 1px rgb(255, 0, 221);
+}
+#ninth{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#ninth:hover{
+    transition: 1s;
+    box-shadow:inset 176px 0px 1px rgb(255, 0, 76);
+}
+#tenth{
+    padding-right: 520px;
+    padding-left:5px;
+    transition: 1s;
+}
+#tenth:hover{
+    transition: 1s;
+    box-shadow:inset 360px 0px 1px rgb(255, 0, 0);
+}
+#para{
+    font-size: 35px;
+    color: tomato;
+    writing-mode: vertical-lr;
+    margin-top: -575px;
+    margin-left: 800px;
+}
+/*------------------------------------Tech ends------------------------------------*/
+.contact{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(174, 0, 255);
+    position: absolute;
+    margin-left: 2731.5px;
+    margin-top: -640px;
+    overflow: hidden;
+}
+.contact h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 80px;
+    color:hotpink;
+    text-shadow: 1px 1px 1px red;
+}
+.contact .data{
+    height: 0px;
+    width: 0px;
+    margin-top: -55px;
+    border-left: solid 320px rgb(111, 0, 255);
+    border-bottom: solid 320px rgb(55, 0, 255);
+    border-right: 320px solid transparent;
+    border-top: 320px solid transparent;
+}
+.icons1{
+    margin-top: -150px;
+    margin-left:150px;
+    width: 700px;
+    height: 50px;
+    background-color: rgb(174, 0, 255);
+    box-shadow: inset 2px 2px 10px rgb(138, 20, 192),inset -1px -1px 10px rgb(143, 3, 207),inset -2px -2px 10px black;
+    border-radius: 20px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.icons1 img{
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    margin-left: 70px;
+}
+.icons1 img:hover{
+    transform: translateY(-25px);
+    transition: 0.5s;
+    box-shadow: 0px 10px 10xp black;
+}
+.contact:hover .icons1{
+    animation: icon1 3s 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+@keyframes icon1{
+    0%{height: 0px;width: 0px;}
+    50%{height: 50px;width: 700px;}
+    70%{margin-left: 250px;}
+    100%{margin-left: 150px;}
+}
+.icons2{
+    margin-top:50px;
+    margin-left:250px;
+    width: 700px;
+    height: 50px;
+    background-color: rgb(174, 0, 255);
+    box-shadow: inset 2px 2px 10px rgb(138, 20, 192),inset -1px -1px 10px rgb(143, 3, 207),inset -2px -2px 10px black;
+    border-radius: 20px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.icons2 img{
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    margin-left: 120px;
+}
+.icons2 img:hover{
+    transform: translateY(-25px);
+    transition: 0.5s;
+    box-shadow: 0px 10px 10xp black;
+}
+.contact:hover .icons2{
+    animation: icon2 3s 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+@keyframes icon2{
+    0%{height: 0px;width: 0px;}
+    50%{height: 50px;width: 700px;}
+    70%{margin-left: 150px;}
+    100%{margin-left: 250px;}
+}
+.icons3{
+    margin-top:50px;
+    margin-left:525px;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    background-color: rgb(174, 0, 255);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: inset 2px 2px 10px rgb(138, 20, 192),inset -1px -1px 10px rgb(143, 3, 207),inset -2px -2px 10px black;
+    visibility: hidden;
+}
+.icons3 img{
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.icons3 img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.contact:hover .icons3{
+    animation: icon3 3s 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+@keyframes icon3{
+    0%{margin-left: 0px;transform: rotate(0deg);}
+    100%{margin-left: 525px;transform: rotate(360deg);}
+}
+/*------------------------------------Contact ends------------------------------------*/
+.services{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: royalblue;
+    margin-left: 4086.9px;
+    margin-top: -640px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.services h1{
+    text-align: center;
+    font-size: 80px;
+    color: crimson;
+}
+.services:hover .crds{
+  transform: translateX(0px);
+  transition: 3.5s;
+}
+.crds{
+    transform: translateX(1390px);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(16, 94, 163);
+    border-radius:30px;
+    box-shadow: 10px 10px 10px black;
+    transition: 2s;
+}
+.card{
+    margin-left: 20px;
+    height: 200px;
+    width: 180px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card p{
+    margin-top: 20px;
+    opacity: 1;
+    text-align: center;
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+.card:hover .card p{
+    opacity: 1;
+    transition: 0.5s;
+} 
+.card:hover{
+    height: 300px;
+    transition: 0.5s;
+}
+.card img{
+    margin-left: 10px;
+    width: 160px;
+    height: 190px;
+}
+.card2{
+    margin-left: 80px;
+    height: 200px;
+    width: 180px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card2:hover{
+    height: 300px;
+    transition: 0.5s;
+}
+.card2 p{
+    margin-top: 20px;
+    opacity: 1;
+    text-align: center;
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+.card2 img{
+    margin-left: 10px;
+    width: 160px;
+    height: 190px;
+}
+.card3{
+    margin-left: 80px;
+    height: 200px;
+    width: 180px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card3:hover{
+    height: 300px;
+    transition: 0.5s;
+}
+.card3 p{
+    margin-top: 20px;
+    opacity: 1;
+    text-align: center;
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+.card3 img{
+    margin-left: 10px;
+    width: 160px;
+    height: 190px;
+}
+.card4{
+    margin-left: 80px;
+    height: 200px;
+    width: 180px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card4:hover{
+    height: 300px;
+    transition: 0.5s;
+}
+.card4 p{
+    margin-top: 20px;
+    opacity: 1;
+    text-align: center;
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+.card4 img{
+    margin-left: 10px;
+    width: 160px;
+    height: 190px;
+}
+.glass{
+    margin-top:120px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.glass p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(255, 230, 0);
+    border:10px double greenyellow;
+    width: 400px;
+    border-radius: 20px;
+}
+/*------------------------------------Services ends------------------------------------*/
+@media(max-width:1024px){
+    .back{
+        width:1024px;
+        height: 540px;
+        padding-top:25px;
+    } 
+    .logo p{
+    transition: 0.5s;
+    margin-top:-20px;
+    padding-bottom:0px;
+    margin-left: 15px;
+    margin-bottom:5px;
+    }
+    .main{
+        width: 1010px;
+    }
+    .main img{
+        margin-top: -50px;
+        margin-left:100px;
+        height: 160px;
+        width: 160px;
+    }
+    .home p a{
+        writing-mode: vertical-rl;
+        font-size: 20px;
+        font-weight: 30px;
+        margin-top: 7.1px;
+        padding-bottom: 19px;
+        margin-left: 15px;
+        transition: 0.5s;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        z-index:1;
+    }
+    /*----------------------------------------------------*/
+    .tech{
+        height:560px;
+        width: 1024px;
+        margin-left:1024px;
+        margin-top:-504px;
+    }
+    #two{
+        margin-right:0px;
+    }
+    #three{
+        margin-top: 46.5%;
+        margin-right:-60px;
+    }
+    #four{
+        margin-top:46.5%;
+        margin-left: -60px;
+    }
+    .container{
+        height: 500px;
+        width: 860px;
+        border: 20px solid wheat;
+        top:0%;
+        left:106%;
+    }
+    .container p{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 5px 5px 5px black;
+        color: rgb(241, 0, 121);
+        font-family: monospace;
+    }
+    .container ul{
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container ul li{
+        line-height: 150%;
+    }
+    .container ul img{
+        height: 40px;
+        width: 40px;
+    }
+    #para{
+        font-size: 30px;
+        margin-top: -500px;
+        margin-left: 750px;
+    }
+    /*-------------------------------------------------------*/
+    .contact{
+        width: 1024px;
+        height: 560px;
+        margin-left: 2048px;
+        margin-top: -560px;
+    }
+    .contact .data{
+        margin-top: -105px;
+    }
+    .icons1{
+        margin-top: -150px;
+        margin-left:-50px;
+    }
+    @keyframes icon1{
+        0%{height: 0px;width: 0px;}
+        50%{height: 50px;width: 700px;}
+        70%{margin-left: 100px;}
+        100%{margin-left: -50px;}
+    }
+    .icons2{
+        margin-top:50px;
+        margin-left:30px;
+        width: 650px;
+    }
+    @keyframes icon2{
+        0%{height: 0px;width: 0px;}
+        50%{height: 50px;width: 650px;}
+        70%{margin-left: 100px;}
+        100%{margin-left: 30px;}
+    }
+    .icons3{
+        margin-top:50px;
+        margin-left:325px;
+        height: 100px;
+        width: 100px;
+    }
+    @keyframes icon3{
+        0%{margin-left: 0px;transform: rotate(0deg);}
+        100%{margin-left: 325px;transform: rotate(360deg);}
+    }
+    /*-------------------------------------------------------*/
+    .services{
+        width: 1024px;
+        height: 560px;
+        margin-left: 3070.9px;
+        margin-top: -560px;;
+    }
+    .crds{
+        margin-top:20px;
+    }
+    .glass{
+        margin-top:110px;
+    }
+}
+/*-----------media 1024px ends here----------------*/
+@media(max-width:768px){
+    .back{
+        width:768px;
+    } 
+    .main{
+        width:740px;
+    }
+    .main img{
+        margin-top: -50px;
+        margin-left:150px;
+        height: 160px;
+        width: 160px;
+    }
+    .main p{
+        margin-top: 70px;
+        margin-right: 0px;
+        color: white;
+        font-size: 25px;
+        text-shadow: 2px 2px 5px black; 
+    }
+    .main .para{
+        margin-top:80px;
+        color: yellow;
+    }
+    /*---------------------------------------------------*/
+    .tech{
+        width:768px;
+        margin-left:768px;
+        margin-top:-504px;
+    }
+    #two{
+        margin-right:0px;
+    }
+    #three{
+        margin-top: 62.5%;
+        margin-right:-60px;
+    }
+    #four{
+        margin-top:62.5%;
+        margin-left: -60px;
+    }
+    .container{
+        height: 500px;
+        width: 600px;
+        margin-left:20px;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+    .container p{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 5px 5px 5px black;
+        color: rgb(241, 0, 121);
+        font-family: monospace;
+    }
+    .container ul{
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container ul li{
+        line-height: 150%;
+    }
+    .container ul img{
+        height: 40px;
+        width: 40px;
+        margin-top: -870px;
+        margin-left: 500px;
+    }
+    #para{
+        font-size: 30px;
+        margin-top: -500px;
+        margin-left: 750px;
+    }
+    /*------------------------------------------*/
+    .contact{
+        width:768px;
+        margin-left: 1536px;
+        margin-top: -560px;
+    }
+    .contact .data{
+        margin-top: -100px;
+        border-left: solid 269.5px rgb(111, 0, 255);
+        border-bottom: solid 269.5px rgb(55, 0, 255);
+        border-right: 269.5px solid transparent;
+        border-top: 269.5px solid transparent;
+    }
+    .contact h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .icons1{
+        margin-top: -150px;
+        margin-left:-110px;
+        width: 600px;
+    }
+    .icons1 img{
+        height: 50px;
+        width: 50px;
+        transition: 0.5s;
+        margin-left:55px;
+    }
+    @keyframes icon1{
+        0%{height: 0px;width: 0px;}
+        50%{height: 50px;width: 600px;}
+        70%{margin-left: 100px;}
+        100%{margin-left: -110px;}
+    }
+    .icons2{
+        margin-top:50px;
+        margin-left:-10px;
+        width: 500px;
+        justify-content: space-between;
+    }
+    .icons2 img{
+        margin-left: 80px;
+    }
+    @keyframes icon2{
+        0%{height: 0px;width: 0px;}
+        50%{height: 50px;width: 500px;}
+        70%{margin-left: 100px;}
+        100%{margin-left:-10px;}
+    }
+    .icons3{
+        margin-top:50px;
+        margin-left:225px;
+    }
+    @keyframes icon3{
+        0%{margin-left: 0px;transform: rotate(0deg);}
+        100%{margin-left: 225px;transform: rotate(360deg);}
+    }
+    /*---------------------------------------------*/
+    .services{
+        width: 768px;
+        height: 560px;
+        margin-left: 2303.9px;
+    }
+    .services h1{
+        font-size: 60px;
+    }
+    .crds{
+        margin-top: 20px;
+        height: 150px;
+    }
+    .glass{
+        margin-top:150px;
+    } 
+    .card{
+        margin-left:0px;
+        height: 150px;
+        width: 150px;
+    }
+    .card img{
+        margin-left:0px;
+        width: 130px;
+        height: 130px;
+    }
+    .card p{
+        margin-top: 30px;
+    }
+    .card:hover{
+        height: 250px;
+        transition: 0.5s;
+    }
+    .card2{
+        margin-left: 80px;
+        height: 150px;
+        width: 150px;
+    }
+    .card2:hover{
+        height: 250px;
+        transition: 0.5s;
+    }
+    .card2 img{
+        margin-left:0px;
+        width: 130px;
+        height: 130px;
+    }
+    .card2 p{
+        margin-top: 30px;
+    }
+    .card3{
+        margin-left: 80px;
+        height: 150px;
+        width: 150px;
+    }
+    .card3:hover{
+        height: 265px;
+        transition: 0.5s;
+    }
+    .card3 img{
+        margin-left:0px;
+        width: 130px;
+        height: 130px;
+    }
+    .card3 p{
+        margin-top: 30px;
+    }
+    .card4{
+        margin-left: 80px;
+        height: 150px;
+        width: 150px;
+    }
+    .card4 p{
+        margin-top: 30px;
+    }
+    .card4:hover{
+        height: 250px;
+        transition: 0.5s;
+    }
+    .card4 img{
+        margin-left:0px;
+        width: 130px;
+        height: 130px;
+    }
+}
+/*----------------768px end here-----------------*/
+@media (max-width:425px){
+    .back{
+        width:425px;
+        height: 540px;
+        padding-top:25px;
+    }
+    .logo p{
+        writing-mode:horizontal-tb;
+        font-size: 20px;
+        padding-top:5px;
+        padding-bottom:0px;
+        margin-left: 1px;
+        margin-bottom:0px;
+        padding-left: 20px;
+        width: 140px;
+    }  
+    .logo p:hover{
+        box-shadow:inset 180px 0px 1px tomato;
+        transition: 0.5s;
+    }
+    .home p a{
+        writing-mode:horizontal-tb;
+        font-size: 20px;
+        font-weight: 20px;
+        padding-top: 27px;
+        line-height: 300%;
+        padding-bottom: 29px;
+    }
+    .main{
+        height:100%;
+        width:100%;
+        border-right: 0px solid wheat;
+        border-radius:0px;
+        margin-left: 0px;
+        margin-top:-590px;
+    }
+    .main img{
+        margin-top:20px;
+        margin-left:150px;
+        height: 160px;
+        width: 160px;
+    }
+    .main p{
+        margin-top: 100px;
+        margin-left:20px;
+        color: white;
+        font-size: 25px;
+        text-shadow: 2px 2px 5px black; 
+        text-align: center;
+    }
+    .main .para{
+        margin-top:100px;
+        color: yellow;
+        margin-left: 10px;
+        text-align: center;
+    }
+    /*-----------------------------------------------*/
+    .tech{
+        width:425px;
+        height: 540px;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    #one{
+        height: 30px;
+        width: 30px;
+    }
+    #two{
+        height: 30px;
+        width: 30px;
+        margin-right:0px;
+    }
+    #three{
+        height: 30px;
+        width: 30px;
+        margin-top: 120%;
+        margin-right:-30px;
+    }
+    #four{
+        height: 30px;
+        width: 30px;
+        margin-top:120%;
+        margin-left:-30px;
+    }
+    .container{
+        height: 500px;
+        width: 320px;
+        margin-left:-420px;
+        margin-top:142%;
+        overflow: hidden;
+    }
+    .container p{
+        font-size:30px;
+    }
+    .container ul{
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container ul li{
+        line-height: 150%;
+    }
+    .container ul img{
+        height: 40px;
+        width: 40px;
+        margin-top: -870px;
+        margin-left: 500px;
+    }
+    #para{
+        font-size: 30px;
+        margin-top: -500px;
+        margin-left: 750px;
+    }
+    #first:hover{
+        box-shadow:inset 180px 0px 1px tomato;
+        transition: 1s;
+    }
+    #second:hover{
+        transition: 1s;
+        box-shadow:inset 135px 0px 1px rgb(255, 38, 0);
+    }
+    #third:hover{
+        transition: 1s;
+        box-shadow:inset 30px 0px 1px rgb(217, 255, 0);
+    }
+    #fourth:hover{
+        transition: 1s;
+        box-shadow:inset 75px 0px 1px rgb(72, 255, 0);
+    }
+    #fifth:hover{
+        transition: 1s;
+        box-shadow:inset 60px 0px 1px rgb(0, 255, 191);
+    }
+    #sixth:hover{
+        transition: 1s;
+        box-shadow:inset 150px 0px 1px rgb(17, 0, 255);
+    }
+    #seventh:hover{
+        transition: 1s;
+        box-shadow:inset 120px 0px 1px rgb(119, 0, 255);
+    }
+    #eight:hover{
+        transition: 1s;
+        box-shadow:inset 120px 0px 1px rgb(255, 0, 221);
+    }
+    #ninth:hover{
+        transition: 1s;
+        box-shadow:inset 90px 0px 1px rgb(255, 0, 76);
+    }
+    #tenth:hover{
+        transition: 1s;
+        box-shadow:inset 180px 0px 1px rgb(255, 0, 0);
+    }
+    /*--------------------------------------------*/
+    .contact{
+        width:425px;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    .contact .data{
+        margin-top: -100px;
+        border-left: solid 290px rgb(111, 0, 255);
+        border-bottom: solid 290px rgb(55, 0, 255);
+        border-right: 290px solid transparent;
+        border-top: 290px solid transparent;
+    }
+    .contact h1{
+        font-size: 50px;
+    }
+    .icons1{
+        margin-top: -150px;
+        margin-left:-280px;
+        width: 400px;
+        height: 40px;
+    }
+    .icons1 img{
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+        margin-left:20px;
+        margin-right:13px;
+    }
+    @keyframes icon1{
+        0%{height: 0px;width: 0px;}
+        50%{height: 40px;width:400px;}
+        70%{margin-left: -1000px;}
+        100%{margin-left: -280px;}
+    }
+    .icons2{
+        margin-top:50px;
+        margin-left:-280px;
+        width: 400px;
+    }
+    .icons2 img{
+        margin-left:63px;
+    }
+    @keyframes icon2{
+        0%{height: 0px;width: 0px;}
+        50%{height: 40px;width: 400px;}
+        70%{margin-left: 1000px;}
+        100%{margin-left:-280px;}
+    }
+    .icons3{
+        margin-top:100px;
+        margin-left:-120px;
+    }
+    @keyframes icon3{
+        0%{margin-left: 0px;transform: rotate(0deg);}
+        100%{margin-left:-120px;transform: rotate(-360deg);}
+    }
+    /*---------------------------------------------*/
+    .services{
+        width: 425px;
+        height: 540px;
+        margin-left:0px;
+        margin-top:560px;
+    }
+    .services h1{
+        font-size: 60px;
+    }
+    .crds{
+        margin-top: 20px;
+        height: 290px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .glass{
+        margin-top:50px;
+    } 
+    .glass p{
+        font-size: 60px;
+        padding: 0px;
+    }
+    .card{
+        margin-top: 20px;
+        margin-left:250px;
+        height: 100px;
+        width: 100px;
+    }
+    .card img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card2{
+        margin-top: 20px;
+        margin-left:50px;
+        height: 100px;
+        width: 100px;
+    }
+    .card2 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card2 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card2:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card2:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card3{
+        margin-top: 20px;
+        margin-left:50px;
+        height: 100px;
+        width: 100px;
+        padding: 0px 15px;
+    }
+    .card3 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card3 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card3:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card3:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card4{
+        margin-top: 20px;
+        margin-right:50px;
+        height: 100px;
+        width: 100px;
+    }
+    .card4 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card4 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card4:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card4:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+}
+/*------------425px media ends here----------------*/
+@media (max-width:375px){
+     .back{
+         overflow: hidden;
+     } 
+     .logo p{
+        writing-mode:horizontal-tb;
+        font-size: 30px;
+        padding-top:5px;
+        padding-bottom:0px;
+        margin-left: 1px;
+        margin-top:10px;
+        padding:0px 10px;
+        width: 150px;
+    }   
+    .main{
+        width:112%;
+        height:545px;
+        border-right: 0px solid wheat;
+        border-radius:0px;
+        margin-left:0px;
+        margin-top:-562px;
+        overflow: hidden;
+    }
+    .main img{
+        margin-left: 150px;
+    }
+    @keyframes anim{
+        0% {transform: translateX(-1600px);}
+        100%{transform:translateX(0);}
+    }
+    .main p{
+        margin-right: 80px;
+    }
+    .main .para{
+        margin-top: 50px;
+    }
+/*--------------------------------------------------*/
+    .tech{
+        width:375px;
+        height: 540px;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    #one{
+        height: 30px;
+        width: 30px;
+    }
+    #two{
+        height: 30px;
+        width: 30px;
+        margin-right:0px;
+    }
+    #three{
+        height: 30px;
+        width: 30px;
+        margin-top: 135%;
+        margin-right:-30px;
+    }
+    #four{
+        height: 30px;
+        width: 30px;
+        margin-top:135%;
+        margin-left:-30px;
+    }
+    .container{
+        height: 430px;
+        width: 320px;
+        margin-left:-390px;
+        margin-top:159%;
+        overflow-y: scroll;
+    }
+    .container p{
+        font-size:30px;
+    }
+    .container ul{
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container ul li{
+        line-height: 150%;
+    }
+    .container ul img{
+        height: 40px;
+        width: 40px;
+        margin-top: -870px;
+        margin-left: 500px;
+    }
+    #para{
+        font-size: 30px;
+        margin-top: -500px;
+        margin-left: 750px;
+    }
+    #first:hover{
+        box-shadow:inset 180px 0px 1px tomato;
+        transition: 1s;
+    }
+    #second:hover{
+        transition: 1s;
+        box-shadow:inset 135px 0px 1px rgb(255, 38, 0);
+    }
+    #third:hover{
+        transition: 1s;
+        box-shadow:inset 30px 0px 1px rgb(217, 255, 0);
+    }
+    #fourth:hover{
+        transition: 1s;
+        box-shadow:inset 75px 0px 1px rgb(72, 255, 0);
+    }
+    #fifth:hover{
+        transition: 1s;
+        box-shadow:inset 60px 0px 1px rgb(0, 255, 191);
+    }
+    #sixth:hover{
+        transition: 1s;
+        box-shadow:inset 150px 0px 1px rgb(17, 0, 255);
+    }
+    #seventh:hover{
+        transition: 1s;
+        box-shadow:inset 120px 0px 1px rgb(119, 0, 255);
+    }
+    #eight:hover{
+        transition: 1s;
+        box-shadow:inset 120px 0px 1px rgb(255, 0, 221);
+    }
+    #ninth:hover{
+        transition: 1s;
+        box-shadow:inset 90px 0px 1px rgb(255, 0, 76);
+    }
+    #tenth:hover{
+        transition: 1s;
+        box-shadow:inset 180px 0px 1px rgb(255, 0, 0);
+    }
+    /*--------------------------------------------------------*/
+    .contact{
+        width:375px;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    .icons1{
+        margin-top: -150px;
+        margin-left:-290px;
+        width: 380px;
+        height: 40px;
+        border-radius: 0px;
+    }
+    .icons1 img{
+        height: 40px;
+        width: 40px;
+        transition: 0.5s;
+        margin-left:23px;
+        margin-right:3px;
+    }
+    @keyframes icon1{
+        0%{height: 0px;width: 0px;}
+        50%{height: 40px;width:400px;}
+        70%{margin-left: -1000px;}
+        100%{margin-left: -290px;}
+    }
+    .icons2{
+        margin-top:50px;
+        margin-left:-290px;
+        width: 380px;
+        border-radius: 0px;
+    }
+    .icons2 img{
+        margin-left:63px;
+    }
+    @keyframes icon2{
+        0%{height: 0px;width: 0px;}
+        50%{height: 40px;width: 380px;}
+        70%{margin-left: 1000px;}
+        100%{margin-left:-290px;}
+    }
+    .icons3{
+        margin-top:100px;
+        margin-left:-140px;
+    }
+    @keyframes icon3{
+        0%{margin-left: 0px;transform: rotate(0deg);}
+        100%{margin-left:-140px;transform: rotate(-360deg);}
+    }
+    /*------------------------------------------------------------*/
+    .services{
+        width: 375px;
+        height: 540px;
+        margin-left:0px;
+        margin-top:560px;
+    }
+    .services h1{
+        font-size: 60px;
+    }
+    .crds{
+        margin-top: 20px;
+        height: 290px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .glass{
+        margin-top:50px;
+    } 
+    .glass p{
+        font-size: 50px;
+        padding: 0px;
+
+    }
+    .card{
+        margin-top: 20px;
+        margin-left:300px;
+        height: 100px;
+        width: 100px;
+    }
+    .card img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card2{
+        margin-top: 20px;
+        margin-left:50px;
+        height: 100px;
+        width: 100px;
+    }
+    .card2 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card2 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card2:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card2:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card3{
+        margin-top: 20px;
+        margin-left:50px;
+        height: 100px;
+        width: 100px;
+        padding: 0px 15px;
+    }
+    .card3 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card3 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card3:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card3:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+    .card4{
+        margin-top: 20px;
+        margin-left:50px;
+        height: 100px;
+        width: 100px;
+    }
+    .card4 img{
+        margin-left:0px;
+        width: 100px;
+        height: 100px;
+    }
+    .card4 p{
+        margin-top: 30px;
+        color:  rgb(16, 94, 163);
+    }
+    .card4:hover p{
+        color: rgb(214, 69, 98);
+        font-weight: 100    ;
+    }
+    .card4:hover{
+        margin-top: 0px;
+        padding-top: 20px;
+        height: 300px;
+        transition: 0.5s;
+        background-color: royalblue;
+        border-radius: 0px;
+    }
+}
+/*---------------375px media ends here--------------------*/
+@media(max-width:320px){
+    .back{
+        width: 325px;
+        height: 540px;
+    }
+    .main{
+        width: 325px;
+    }
+    .main img{
+        height: 150px;
+        width: 150px;
+        margin-top: 70px;
+        margin-right: 70px;
+    }
+    .main p{
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    .main .para{
+        font-size:25px;
+    }
+    /*----------------------------------------*/
+    .tech{
+        width:320px;
+        height: 540px;
+        margin-left:0px;
+        margin-top:0px;
+    }
+    #one{
+        height: 30px;
+        width: 30px;
+    }
+    #two{
+        height: 30px;
+        width: 30px;
+        margin-right:0px;
+    }
+    #three{
+        height: 30px;
+        width: 30px;
+        margin-top: 157%;
+        margin-right:-30px;
+    }
+    #four{
+        height: 30px;
+        width: 30px;
+        margin-top:157%;
+        margin-left:-30px;
+    }
+    .container{
+        height: 430px;
+        width: 280px;
+        margin-left:-340px;
+        margin-top:187%;
+        overflow: hidden;
+    }
+    .container p{
+        font-size:30px;
+    }
+    .container ul{
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container ul li{
+        line-height: 150%;
+        font-size: 12px;
+    }
+    .container ul img{
+        height: 40px;
+        width: 40px;
+        margin-top: -870px;
+        margin-left: 500px;
+    }
+    #para{
+        font-size: 30px;
+        margin-top: -500px;
+        margin-left: 750px;
+    }
+    #first:hover{
+        box-shadow:inset 162px 0px 1px tomato;
+        transition: 1s;
+    }
+    #second:hover{
+        transition: 1s;
+        box-shadow:inset 121.5px 0px 1px rgb(255, 38, 0);
+    }
+    #third:hover{
+        transition: 1s;
+        box-shadow:inset 27px 0px 1px rgb(217, 255, 0);
+    }
+    #fourth:hover{
+        transition: 1s;
+        box-shadow:inset 67.5px 0px 1px rgb(72, 255, 0);
+    }
+    #fifth:hover{
+        transition: 1s;
+        box-shadow:inset 54px 0px 1px rgb(0, 255, 191);
+    }
+    #sixth:hover{
+        transition: 1s;
+        box-shadow:inset 108px 0px 1px rgb(17, 0, 255);
+    }
+    #seventh:hover{
+        transition: 1s;
+        box-shadow:inset 108px 0px 1px rgb(119, 0, 255);
+    }
+    #eight:hover{
+        transition: 1s;
+        box-shadow:inset 120px 0px 1px rgb(255, 0, 221);
+    }
+    #ninth:hover{
+        transition: 1s;
+        box-shadow:inset 81px 0px 1px rgb(255, 0, 76);
+    }
+    #tenth:hover{
+        transition: 1s;
+        box-shadow:inset 162px 0px 1px rgb(255, 0, 0);
+    }
+    /*-----------------------------------------------*/
+    .contact{
+        width:320px;
+    }
+    .icons1 img{
+        margin-left:17px;
+    }
+    .icons2 img{
+        margin-left:43px;
+    }
+
+    .icons3{
+        margin-left:-160px;
+    }
+    @keyframes icon3{
+        0%{margin-left: 0px;transform: rotate(0deg);}
+        100%{margin-left:-160px;transform: rotate(-360deg);}
+    }
+    /*------------------------------------------------------------*/
+    .services{
+        width: 320px;
+    }
+   
+}

@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	scroll-behavior: smooth;
+}
+*{margin: 0px;padding: 0px;}
+.navbar{
+    padding: 5px 0px;
+    width: 100%;
+    margin-top:5px;
+    display: flex;
+    align-items:center;
+    background-color:royalblue;
+    border-radius: 150px;
+}
+.logo p{
+    margin-left:20px;
+    padding: 0px 5px;
+    font-size: 30px;
+    color: chartreuse;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.navbar ul{
+    display:inline-flex;
+    list-style: none;
+}
+.navbar ul a{
+    padding: 5px;
+    text-decoration:none;
+    color: rgb(255, 0, 51);
+}
+.navbar ul li{
+    padding: 0px 62px;
+}
+.submnu{
+    display: none;
+}
+.submnu a{
+    display: block;
+    background-color: royalblue;
+}
+.navbar ul li:hover .submnu{
+    display: block;
+    position: absolute;
+    margin-top:0px;
+    margin-left:-80px;
+}
+.navbar ul li:hover .submnu ul{
+    display: block;
+}
+/*----------navigation Ends here----------------------*/
+.back{
+    background-color: rgb(81, 255, 0);
+}
+.heading{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(255, 94, 0);
+    text-shadow: 3px 1px 1px yellow;
+}
+.container{
+    display: flex;
+}
+.htmlcode{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.csscode{
+    margin-left: 91%;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+#text{
+    height: 100px;
+    width: 50%;
+    background-color: royalblue;
+}
+.sec1 h2{
+    text-align: center;
+    font-size: 80px;
+    text-decoration: underline 5px;
+    text-shadow: 5px 5px white;
+}
+/*---------------section ends here------------------------*/
+@media(max-width:1024px){
+    .navbar2{
+        width: 99.5%;
+    }
+    .csscode{
+        margin-left:87%;
+    }  
+}
+@media(max-width:768px){
+    .heading{
+        font-size: 40px;
+    }
+    .navbar2 .logo p{
+        margin-left: 20px;
+        font-size: 25px;
+        width:120.5px;
+    }
+    .nav-bar ul li{
+        padding: 0px 45px;
+    }
+    .htmlcode{
+        font-size: 19px;
+    }
+    .csscode{
+        margin-left:85%;
+        font-size: 19px;
+    }
+    .sec1 h2{
+        font-size: 40px;
+        text-decoration: underline 5px;
+        text-shadow: 5px 5px white;
+    }
+    .sec1 h2{
+        font-size: 50px;
+        text-decoration: underline 5px;
+        text-shadow: 5px 5px white;
+    }
+}
+@media(max-width:425px){
+    .navbar2{
+        width: 99.7%;
+    }
+    .navbar2 .logo p{
+        font-size: 20px;
+        width: 96.5px;
+    }
+    .nav-bar ul a{
+        font-size: 15px;
+    }
+    .submnu a{
+        padding: 3px 10px;
+    }
+
+    .logo p{
+        font-size: 20px;
+        width: 100px;
+        padding: 3px 15px;
+    }
+    .nav-bar ul li{
+        padding: 0px 8px;
+    }
+    .nav-bar ul li:hover .submnu{
+        margin-left:-40px;
+    }
+    .htmlcode{
+        font-size:17px;
+    }
+    .csscode{
+        margin-left:75%;
+        font-size: 17px;
+    }  
+    .sec1 h2{
+        font-size:30px;
+        text-decoration: underline 5px;
+        text-shadow: 5px 5px white;
+    }
+}
+@media(max-width:375px){
+    .navbar2{
+        width: 99.7%;
+    }
+    .navbar2 .logo p{
+        margin-top: 0px;
+        padding-bottom: 0px;
+        font-size: 18px;
+        height: 70%;
+        width: 87px;
+    }
+    navbar2:hover .logo{
+        margin-left: 0px;
+        transition: 0.5s; 
+    }
+    .nav-bar ul li{
+        padding: 0px 4px;
+    }
+    .sec1 h2{
+        font-size: 25px;
+        text-decoration: underline 5px;
+        text-shadow: 2px 2px white;
+    }
+}
+@media(max-width:320px){
+    .navbar2{
+        width: 99.7%;
+    }
+    .navbar2 .logo {
+        display: none;
+    }
+    .nav-bar ul li{
+        padding: 0px 17px;
+    }
+    .nav-bar ul li:hover .submnu{
+        margin-left:-40px;
+    }
+    .htmlcode{
+        font-size: 16px;
+    }
+    .csscode{
+        margin-left:63%;
+        font-size: 16px;
+    }  
+    .heading{
+        font-size: 20px;
+    }
+    .sec1 h2{
+        font-size: 30px;
+        text-decoration: underline 5px;
+        text-shadow: 3px 3px white;
+    }
+}

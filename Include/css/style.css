@@ -1,0 +1,679 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --logopbor-color:#dddddd;
+    --navbarbac-color:#222831;
+    --navlistliahov-color:white;
+    --search-color:black;
+    --searchtext-colour:white;
+    --btn-color:#ff4646;
+    --darkmode-color:rgb(255, 218, 218);
+    --navigationbar-color:purple;
+}
+.dark-theme{
+  --btn-color:#ff4646;  
+}
+.logo p{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    height: 100%;
+    width: 150px;
+    border: 4px solid rgb(13, 197, 230);
+    border-radius: 12px;
+    padding: 5px 15px;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+    background-color:var(--navigationbar-color); /* change colour*/
+    position: sticky;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    word-spacing: 2px;
+}
+.nav-list li{
+    display: inline-block;
+    list-style: none;
+    padding: 23px 13px;
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: turquoise;
+}
+.nav-list li a:hover{
+    color: black;
+}
+/*---------------nav end here---------------------------------------------------*/
+.box-main{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto-;
+    background-color: burlywood;
+}
+.half{
+    padding: 20px 30px;
+    width: 70%;
+    flex-direction: column;
+   
+}
+.half .big-text {
+    font-size: 50px;
+    transition: 0.5s;
+    text-align: left;
+}
+.half .big-text:hover{
+    text-shadow: 0px 5px 5px black;
+    transition: 0.3s;
+}
+.half .small-text{
+    padding: 20px;
+    font-size: 20px;
+    color:saddlebrown;
+    font-family: 'WindSong', cursive;
+    text-align: left; 
+    transition: 0.4s;   
+}
+.half .small-text:hover{
+    color: #000;
+    transition: 0.3s;
+}
+.secondhalf{
+    width: 30%;
+    display: flex;
+    padding: 20px 20px;
+
+}
+.secondhalf .scondlogo{
+    font-size: 80px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
+    width: 250px;
+    border: 17px inset rgb(236, 150, 21);
+    border-radius: 12px;
+    transition: 1.5s;
+}
+.secondhalf .scondlogo:hover{
+    border: 17px outset rgb(236, 150, 21);
+    transition: 1.7s;
+}
+.secondhalf .scondlogo p{
+    padding-bottom: 3px;
+}
+/*---------------firstsec end here---------------------------------------------------*/
+.secondsec{
+    padding: 40px;
+    max-width: 100%;
+    margin: auto;
+    background-color:rgb(255, 94, 94);
+    display: grid;
+    justify-content: center;
+}
+.secondsec .container{
+    height: 500px;
+    width: 900px;
+    border-radius: 0px 30px;
+    background-color: coral;
+    transition: 0.6s;
+	overflow:hidden;
+} 
+.secondsec .container:hover{
+    border-radius: 0px 100px;
+    box-shadow: 10px 10px 10px black;
+    transition: 0.6s;
+}
+.top{    
+    font-size: 70px;
+    color: cornsilk;
+    text-align: center;
+}
+/*---------------secondsec end here---------------------------------------------------*/
+.thirdsec{
+    background:linear-gradient( rgba(98, 0, 255,0.8),rgb(234, 0, 255));
+    display: grid;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.thirdsec .componenthead{
+    text-align: center;
+    color: cornsilk;
+    font-size: 80px;
+    text-decoration:2.5px underline white;
+    transition: 0.5s;
+}
+.thirdsec .componenthead:hover{
+    color: gold;
+    transition: 0.5s;
+}
+.thirdsec .componentinfo{
+    padding: 50px 0px;
+    font-size: 40px;
+    color: blanchedalmond;
+    transition: 0.5s;
+}
+.thirdsec .componentinfo:hover{
+    background: linear-gradient(to right,rgb(255, 251, 0),rgb(255, 81, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow:5px 5px 7px black;
+    transition: 0.5s;
+}
+.componentdata{
+    cursor: pointer;
+    width: 950px;
+    height: 550px;
+    background-color: blanchedalmond;
+    border-radius: 30px 30px 0px 0px;
+    transition: 0.7s;
+}
+.componentdata:hover{
+    border-radius: 30px  30px 50% 50%;
+    transition: 0.7s;
+    box-shadow: 10px 10px 5px black;
+}
+.componentdata .componetul 
+{
+    padding: 20px 0px;
+    word-spacing: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.componentdata .componetul li{
+    display: inline-block;
+    list-style: none;
+}
+.componetul a{
+    color: tomato;
+    text-decoration:none;
+}
+.componetul a:hover{
+    color: black;
+}
+/*---------------thirdsec end here---------------------------------------------------*/
+.fourthsec{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(190, 250, 26,0.8);
+    display: grid;
+    justify-content: center;
+    padding: 30px 0px;
+    letter-spacing: 3px;   
+}
+.fourthsec .conatacthead:hover{
+    text-shadow: 10px 10px 10px rgb(153, 0, 255);
+}
+.fourthsec .conatacthead{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(89, 0, 255);
+    transition: 0.5s;
+}
+.bigfooter{
+    display: flex;
+    justify-content:space-between;
+}
+.footerp1{
+    margin-right: 14px;
+    height: 230px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: darkorange;
+    transition:0.5s;
+}
+.footerp1:hover{
+    box-shadow: 10px 10px 10px black;
+    background:linear-gradient(45deg ,wheat,darkorange);
+    transition: 0.7s;
+}
+.footerone{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: rgb(255, 0, 149);
+    text-decoration:underline 2px  rgb(255, 0, 85);
+}
+.footertwo{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: rgb(255, 0, 149);
+    text-decoration:underline 2px  rgb(255, 0, 85);
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+}
+.icon:hover{
+    height: 45px;
+    width: 45px;
+    transition: 0.5s;
+}.footerp2{
+    margin-right: 14px;
+    margin-left: 14px;
+    height: 230px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: darkorange;
+    transition:0.5s;
+}
+.footerp2:hover{
+    box-shadow: 10px 10px 10px black;
+    background:linear-gradient(45deg ,wheat,darkorange);
+    transition: 0.7s;
+}
+.icon1{
+    height: 30px;
+    width: 30px;
+    transition: 0.5s;
+}
+.icon1:hover{
+    height: 45px;
+    width: 45px;
+    transition: 0.5s;
+}
+.footerp3{
+    margin-left: 14px;
+    height: 230px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: darkorange;
+    transition:0.5s;
+}
+.footerp3:hover{
+    box-shadow: 10px 10px 10px black;
+    background:linear-gradient(45deg ,wheat,darkorange);
+    transition: 0.7s;
+}
+.footerthree{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: rgb(255, 0, 149);
+}
+.footerthree .address{
+    color:rgb(0, 89, 255);
+}
+.icon2{
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+}
+.icon2:hover{
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+}
+.footerp4{
+    padding: 30px 0px;
+    margin-left: 20px;
+    height: 170px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: darkorange;
+    transition:0.5s;
+}
+.footerp4:hover{
+    box-shadow: 10px 10px 10px black;
+    background:linear-gradient(45deg ,wheat,darkorange);
+    transition: 0.7s;
+}
+.footerfour{
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 20px;
+    color: rgb(255, 0, 149);
+}
+.footerul li{
+    list-style: none;
+}
+.footerul a{
+    text-decoration: none;
+    color:rgb(0, 89, 255);
+}
+/*---------------fourthsec end here---------------------------------------------------*/
+/*-------------------for laptop-------------------------------------------*/
+@media (max-width:1024px){
+    .nav-list li a{
+        font-size: 11px;
+    }
+    .logo p{
+        font-size: 20px;
+        height: 100%;
+        width: 100px;
+        padding: 5px 10px;
+    }
+    .btn{
+        margin-right: 14%;
+    }
+    .secondsec .container{
+        width: 800px;
+    }
+    .componentdata{
+        height: 300px;
+        margin-left: 25px;
+    }
+    .componentdata .componetul{
+        padding: 10px 2px;
+        word-spacing: 10px;
+        font-size: 26px;
+        }
+}
+/*-------------------for random-------------------------------------------*/
+@media(max-width:967px){
+    #search{
+        padding: 2px;
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    .image img{margin-left: 15%;width: 70%;height: 320px;}
+}
+/*-------------------for tablet-------------------------------------------*/
+@media(max-width:768px){
+    .nav-list{
+        width: 70%;
+    }
+    .rightnav{
+        width: 30%;
+        text-align: right;
+    }
+    .half .big-text {
+        font-size: 40px;
+        transition: 0.5s;
+        text-align: left;
+    }
+    .secondhalf .scondlogo{
+        font-size: 60px;
+        height: 200px;
+        width: 230px;
+        border: 15px inset rgb(236, 150, 21);
+        border-radius: 10px;
+    }
+    .secondsec .container{
+        height: 400px;
+        width: 700px;
+    }
+    .top{    
+        font-size: 40px;
+    }
+    .componentdata{
+        cursor: pointer;
+        width: 650px;
+        height: 250px;
+    }
+    .thirdsec .componentinfo{
+        padding: 50px 0px;
+        font-size: 30px;
+    }
+    .componentdata .componetul{
+    padding: 10px 15px;
+    word-spacing: 20px;
+    font-size: 16px;
+    }
+    .fourthsec .conatacthead{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .footerp1{
+        margin-right: 12px;
+        height: 180px;
+        width: 130px;
+    }
+    .footerp2{
+        margin-right: 12px;
+        height: 180px;
+        width: 130px;
+    }
+    .footerp3{
+        margin-right: 12px;
+        height: 180px;
+        width: 130px;
+    }
+    .footerp4{
+        margin-right: 12px;
+        height: 120px;
+        width: 120px;
+    }
+    .icon1{
+        height: 20px;
+        width: 20px;
+    }
+    .footerthree{
+        padding: 0px 0px;
+        font-size: 15px;
+    }
+    .footerfour{
+        padding: 5px 0px;
+        font-size: 15px;
+    }
+    .footerone{
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    .footertwo{
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+}
+/*-------------------for l=mobile-------------------------------------------*/
+@media(max-width:425px){
+    .nav-bar{
+        display: block;
+    }
+    .nav-list{
+        width: 100%;
+    }
+    .rightnav{
+        width: 100%;
+    }
+    .logo p{
+        display:none;
+    }
+    .btn{
+        margin-right: 8%;
+    }
+    .box-main{
+        display: block;
+    }
+    .half .big-text {
+        padding: 0px 5px;
+        max-width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .half .small-text{
+        font-size: 15px;
+        text-align: center;
+    }
+    .secondhalf{
+        display:block;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .secondhalf .scondlogo{
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 40px;
+        height: 70px;
+    }
+    .secondsec .container{
+        height: 200px;
+        width: 400px;
+    }
+    .secondsec .container:hover{
+        border-radius: 0px 50px;
+    }
+    .container .top{
+        font-size: 30px;
+    }
+    .image img{margin-left: 15%;width: 70%;height: 150px;}
+    .thirdsec{
+        padding: 10px 0px;
+    }
+    .thirdsec .componenthead{
+        font-size: 40px; 
+    }
+    .thirdsec .componentinfo{
+        padding:10px 14px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .componentdata{
+        width: 90%;
+        height: 150px;
+    }
+    .fourthsec{
+    padding: 10px 0px;
+    letter-spacing: 1px;   
+    }
+    .fourthsec .conatacthead{
+    font-size: 30px;
+    }
+    .bigfooter{
+    display: block;
+    justify-content:space-between;
+    }
+    .footerp1{
+    margin-left: 10px;
+    height: 130px;
+    width: 150px;
+    }
+    .footerone{
+    padding: 10px 0px;
+    font-size: 17px;
+    }
+    .footertwo{
+    padding: 10px 0px;
+    font-size: 17px;
+    }
+    .icon{
+    height: 25px;
+    width: 25px;
+    }
+    .icon:hover{
+    height: 35px;
+    width: 35px;
+    }
+    .footerp2{
+    height: 170px;
+    width: 150px;
+    }
+    .icon1{
+    height: 20px;
+    width: 20px;
+    }
+    .icon1:hover{
+    height: 35px;
+    width: 35px;
+    }
+    .footerp3{
+    height: 130px;
+    width: 150px;
+    }
+    .footerthree{
+    padding: 10px 0px;
+    font-size: 17px;
+    }
+    .footerthree .address{
+    color:rgb(0, 89, 255);
+    font-size: 14px;
+    }
+    .icon2{
+    height: 30px;
+    width: 30px;
+    }
+    .icon2:hover{
+    height: 40px;
+    width: 40px;
+    }
+    .footerp4{
+    padding: 10px 0px;
+    margin-left: 20px;
+    height: 100px;
+    width: 150px;
+    }
+    .footerfour{
+     text-align: center;
+    font-size: 17px;
+    color: rgb(255, 0, 149);
+    }
+    .footerul a{
+    font-size: 14px;
+    }
+}
+/*-----------------M=mobile---------------------------------*/
+@media(max-width:375px){
+    .nav-bar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-list ul{
+        word-spacing: 0px;
+    }
+    .secondsec .container{
+        height: 200px;
+        width: 300px;
+        border-radius: 0px 30px;
+        background-color: coral;
+        transition: 0.6s;
+    } 
+}
+/*-----------------S=mobile---------------------------------*/
+@media(max-width:320px){ 
+    .secondhalf{
+        margin: 0px 10px;
+        width: 100%;
+        display: block;
+    }
+    .box-main{
+        padding: 20px 0px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .secondhalf .scondlogo{
+        margin-right: 200px;
+        font-size: 30px;
+        color: blanchedalmond;
+        font-family: 'Zen Tokyo Zoo', cursive;
+        justify-content: center;
+        text-align: center;
+        height: 110px;
+        width: 100px;
+    }
+    .secondsec .container{
+        width: 200px;
+    }
+}
+/*media query end here--------------------------------------------*/

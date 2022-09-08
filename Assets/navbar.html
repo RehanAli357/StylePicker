@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Style Picker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Include/css/nav.css'>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="navbar2">
+        <div class="logo"><p><font face="Vivaldi">Style Picker</font></p></div>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#">Type</a>
+                <div class="submnu">
+                    <ul>
+                        <li><a href="#simple">Simple-Nav</a></li>
+                        <li><a href="#logo">Logo-Nav</a></li>
+                        <li><a href="#drop">DropDown-Nav</a></li>
+                        <li><a href="#search">Search-Box</a></li>
+                        <li><a href="#special">Special-Nav</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="designer.html">Designer</a></li>
+            </ul>
+            </div>
+    </nav>
+    <!--________________________nav bars end here_______________________________________-->
+    <section class="sec1">
+        <h1 class="heading" id="simple"><font face="Forte">Simple Navigation Bar</font></h1>
+        <div class="container">
+            <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+        </div>
+        <div class="container">
+            <textarea id="text" name="code1">
+<nav class="nav-bar">
+<ul>
+<li><a href="#">Link-One</a></li>
+<li><a href="#">Link-Two</a></li>
+<li><a href="#">Link-Three</a></li>
+<li><a href="#">Link-Four</a></li>
+</ul>
+</nav>
+            </textarea>
+            <textarea id="text" name="code1">
+.nav-bar{padding: 5px 0px;height: 30px;width: 100%;background-color: black;display: flex;align-items: center;border-radius: 20px;}
+.nav-bar .navdata{display:flex;justify-content: center;}
+.nav-bar ul{display: inline-flex;list-style: none;word-spacing: 10px;}
+.nav-bar ul a{text-decoration: none;color: white;}
+.nav-bar ul li{padding: 0px 12px;}
+            </textarea>
+        </div>
+        <br>
+        <h1 class="heading" id="logo"><font face="Forte">Logo Navigation Bar</font></h1>
+<div class="container">
+<div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+</div>
+<div class="container">
+<textarea id="text" name="code1">
+<nav class="navbar">
+<div class="logo"><img src="file:///D:/appwars%20project/images/sun.png" alt="image"></div>
+<div class="list">
+<ul>
+<li><a href="#">ONE</a></li>
+<li><a href="#">TWO</a></li>
+<li><a href="#">THREE</a></li>
+<li><a href="#">FOUR</a></li>
+</ul>
+</div>
+</nav> 
+</textarea>
+            <textarea id="text" name="code1">
+*{margin: 0px;padding: 0px;}
+.navbar{ background-color: hotpink;display: flex;}
+.logo{padding: 6px 10px;}
+.logo img{padding: 2px 5px;height: 50px;border:2px solid black;}
+.list ul li{padding: 27px 20px;list-style: none;display: inline-flex;}
+.list ul a{text-decoration: none;color: blanchedalmond;}
+.list ul a:hover{color: black;} 
+               </textarea>
+        </div>
+        <br>
+        <h1 class="heading" id="drop"><font face="Forte">DropDown Navigation Bar</font></h1>
+        <div class="container">
+        <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+        </div>
+        <div class="container">
+        <textarea id="text" name="code1">
+<nav class="nav-bar">
+<div class="logo"><img src="file:///D:/appwars%20project/images/sun.png" alt="image"></div>
+<ul>
+<li><a href="#">ONE</a></li>
+<li><a href="#">TWO</a>
+<div class="submnu">
+<ul>
+<li><a href="#">TWO-ONE</a></li>
+<li><a href="#">TWO-TWO</a></li>
+<li><a href="#">TWO-THREE</a></li>
+<li><a href="#">TWO-FOUR</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">THREE</a></li>
+<li><a href="#">FOUR</a></li>
+</ul>
+</nav> 
+        </textarea>
+                    <textarea id="text" name="code1">
+*{margin: 0px;padding: 0px;}
+.nav-bar{padding: 5px 0px;height: 60px;width: 100%;background-color: rgb(255, 5, 192);display: flex;align-items: center;}
+.logo img{margin-left: 20px;height: 50px;border: 2px solid black;}
+.nav-bar ul{display: inline-flex;list-style: none;}
+.nav-bar ul a{padding: 5px;text-decoration: none;color: turquoise;background-color: rgb(255, 5, 192);}
+.nav-bar ul li{padding: 0px 62px;}
+.submnu{display: none;}
+.submnu a{display: block;}
+.nav-bar ul li:hover .submnu{display: block;position: absolute;margin-top:0px;margin-left:-80px;}
+.nav-bar ul li:hover .submnu ul{display: block;}
+                       </textarea>
+                </div>
+                <br>
+                <h1 class="heading" id="search"><font face="Forte">Search Box Navigation Bar</font></h1>
+                <div class="container">
+                <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+                </div>
+                <div class="container">
+                <textarea id="text" name="code1">
+<nav class="navbar">
+<div class="logo"><img src="file:///D:/appwars%20project/images/sun.png" alt="image"></div>
+<div class="data"><ul>
+<li><a href="#">ONE</a></li>
+<li><a href="#">TWO</a></li>
+<li><a href="#">THREE</a></li>
+<li><a href="#">FOUR</a></li>
+</ul>
+</div>
+<div class="search">
+<input type="text" id="searchbox"><button>Search</button>
+</div>
+</nav>
+                </textarea>
+                            <textarea id="text" name="code1">
+*{margin: 0px;padding: 0px;}
+.navbar{width: 100%;background-color: seagreen;display: flex;}
+.logo img{width: 50px;border: 2px solid black;margin-left: 10px;}
+.data ul li{list-style: none;display: inline-flex;margin-top: 20px;margin-left: 20px;}
+.data ul a{text-decoration: none;color: blanchedalmond;}
+.data ul a:hover{color: black;}
+.search{margin-left: 53%;}
+#searchbox{margin-top: 15px;font-size: 20px;border-radius: 20px;border: none ;background-color: wheat;color: orangered;outline: none;}
+.search button{margin-top: 15px;font-size: 16px;border-radius: 15px;border: none;outline: none;cursor: pointer;background-color: coral;color: cyan;padding: 3px 10px;}  
+                               </textarea>
+                        </div>
+                        <br>
+        </section>
+</body>
+</html>

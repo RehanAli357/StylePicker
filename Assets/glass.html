@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Style Picker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Include/css/glass.css'>
+</head>
+<body>
+    <div class="back">
+        <nav class="nav-bar">
+            <div class="navbar2">
+            <div class="logo"><p><font face="Vivaldi">Style Picker</font></p></div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#">Type</a>
+                    <div class="submnu">
+                        <ul>
+                            <li><a href="#colour">Glass Effect</a></li>
+                            <li><a href="#blur">Blur Glass</a></li>
+                            <li><a href="#frosted">frosted Glass</a></li>
+                            <li><a href="#zoom">Magnification Glass</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="designer.html">Designer</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="glass">
+            <h1 class="heading" id="colour"><font face="Castellar">Glass Effect</font></h1>
+            <center><h3>coloured Glass</h3></center>
+            <div class="container">
+                <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+            </div>
+            <div class="container">
+                <textarea id="text">
+<div class="glass">
+<p>Hello There From Here You Can Start To Write Your Content.</p>
+</div>                                   
+                </textarea>  
+                <textarea id="text">
+.glass{height: 500px;width: 500px; background:linear-gradient(to right bottom,rgba(255, 19, 19, 0.7),rgba(255, 0, 0, 0.3));border-radius: 20px;}
+.glass p{padding-top: 20px;text-align: center;justify-content: center;}             
+                </textarea>  
+             </div>
+<br>           
+       
+        <center><h3>coloured Glass Hover</h3></center>
+        <div class="container">
+            <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+        </div>
+        <div class="container">
+            <textarea id="text">
+<div class="glass">
+<p>Hello There From Here You Can Start To Write Your Content.</p>
+</div>                                   
+            </textarea>  
+             <textarea id="text">
+.glass{height: 500px;width: 500px;transition: 1.5s;background:linear-gradient(to right bottom,rgba(255, 19, 19, 0.7),rgba(255, 0, 0, 0.3));border-radius: 20px;}
+.glass:hover{background:linear-gradient(to right bottom,rgba(255, 19, 165, 0.7),rgba(255, 19, 165, 0.3));transition: 1.5s;}
+.glass p{padding-top: 30px;text-align: center;justify-content: center;}            
+            </textarea>  
+        </div>
+<br>
+        <h1 class="heading" id="blur"><font face="Castellar">Glass Blur Effect</font></h1>
+            <center><h3>Blured Glass</h3></center>
+            <div class="container">
+                <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+            </div>
+            <div class="container">
+                <textarea id="text">
+<div class="container">
+<div class="glass"></div>
+<div class="para"><p>Hello There From Here You Can Start To Write Your Content.</p</div>    
+</div>                               
+                </textarea>  
+                <textarea id="text">
+.container{display: flex;width: 100%;margin: 100px;padding-bottom: 20px;}
+.glass{ transition: 1.5s;height: 500px;width: 500px;box-shadow: 0px 15px 15px rgba(0,0,0,0.5);border-radius: 20px;filter: blur(5px);}
+.glass:hover{transition: 1.5s;filter: blur(1px);}
+.para{height: 500px;width: 500px;background-color: transparent;margin-left:-500px;}
+.para p{margin-left:0px;margin-top: 60px;text-align: center;filter:blur(2px);transition: 0.5s;font-size: 20px;color: blanchedalmond;}
+.para p:hover{filter:blur(0px);transition: 0.5s;}      
+                </textarea>  
+            </div>
+ <br>      
+         <h1 class="heading" id="frosted"><font face="Castellar">Frosted Glass Effect</font></h1>
+            <center><h3>Frosted Glass</h3></center>
+                <div class="container">
+                    <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+                 </div>
+                <div class="container">
+                <textarea id="text">
+<div class="container">
+<h1>Heading</h1>
+<p>Hello There You Can Start Writing Your Content From Here..</p>    
+</div>  
+                 </textarea>  
+                 <textarea id="text">
+.container{margin-top: 10rem;width: 600px;height: 400px;text-align: center;box-shadow:0px 0px 10px rgba(255, 255, 255, 0.2);border-radius: 10px;background-color: rgba(255, 255, 255, 0.15);backdrop-filter:blur(14px);}
+.container h1{margin-top: 20px;}
+                  </textarea>  
+                </div>
+<br>
+<h1 class="heading" id="zoom"><font face="Castellar">Magnified Glass Effect</font></h1>
+<center><h3>Magnifide Glass</h3></center>
+    <div class="container">
+        <div class="htmlcode">HTML</div><div class="csscode">CSS</div>
+     </div>
+    <div class="container">
+    <textarea id="text">
+<div class="container">
+<h1>Heading</h1>
+<p>Hello There You Can Start Writing Your Content From Here..</p>    
+</div>  
+     </textarea>  
+     <textarea id="text">
+.container{margin-top: 10px;margin-left: 10px;background: inherit;background-size: 120%;position:absolute;top:0;left:0;bottom:0;right:0;height: 400px;width: 600px;}
+.container:before{content:'';position:absolute;top:0;bottom:0;width: 600px;height: 400px;box-shadow: 20px 20px 100px rgba(0,0,0,0.6),-20px 0px 100px rgba(0,0,0,0.2);background-attachment: fixed;background:transparent;}
+.container h1{margin-top: 20px;text-align:center;color: ivory;}
+.container p{text-align: center;color: ivory;}
+      </textarea>  
+    </div>
+<br>                 
+        </div>
+    </div> 
+</body>
+</html>
